@@ -1,0 +1,20 @@
+{
+  "name": "tugas2_commitlint",
+  "version": "1.0.0",
+  "description": "Implementasi Commitlint dan Husky",
+  "scripts": {
+    "prepare": "husky",
+    "test": "echo \"No tests configured\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^16.0.0"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "git diff --check"
+    ]
+  }
+}
